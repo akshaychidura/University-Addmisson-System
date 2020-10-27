@@ -12,15 +12,9 @@
 		}
 		function istext($text)
 		{
-			if(preg_match("/^[a-zA-Z ]*$/",$text))
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
+			return preg_match("/^[a-zA-Z ]*$/",$text);
 		}
+		
 	if(isset($_POST['signup_submit']))
 	{
 		$f_name = $_POST['f_name'];
